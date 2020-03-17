@@ -5,7 +5,7 @@ int GetNumberOfDivisors(int number)
   int count = 0;
   for(int i = 1; i <= number; i++) {
     if(number % i == 0) {
-      printf("%d", i);
+      printf("%d, ", i);
       count++;
     }
   }
