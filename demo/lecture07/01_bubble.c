@@ -41,8 +41,8 @@ void validate(int array[], int n)
 
 void bubble_sort(int array[], int n)
 {
-  for(int i=0; i<n; i++)
-    for(int j=0; j<n-1; j++)
+  for(int i=n; i>0; i--)
+    for(int j=0; j<i-1; j++)
       if(array[j] > array[j+1])
         swap(array, j, j+1);
 }
